@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@400;600;800&family=Kumbh+Sans:wght@400;700&family=Red+Hat+Display:ital,wght@0,500;0,700;0,900;1,500;1,700;1,900&display=swap');
+body{
+    font-size: 16px;
+    font-family: 'Kumbh Sans', sans-serif;
+    margin: 0px 320px;
+    height: 100vh;
+}
+header{
+    display: flex;
+    height: 120px;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid hsl(219, 9%, 95%);
+}
+nav{
+    height: 100%;
+    width: 70%;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    margin: 0px;
+    height: 100%;
+    width: 100%;
+}
+nav ul li{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+nav ul li:hover{
+    border-bottom: 4px solid  hsl(26, 100%, 55%);
+}
+.contenedor-logo-nav{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 60%;
+}
+.contenedor-header-images{
+    display: flex;
+    align-items: flex-start;
+    gap: 35px;
+}
+.contenedor-header-images img{
+    margin: auto 0px;
+}
+.contenedor-principal{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 100px;
+}
+.logo{
+    width: 25%;
+}
+.letra-nav{
+    color:  hsl(219, 9%, 45%);
+    font-weight: bold;
+}
+.letra-gris{
+    color:  hsl(219, 9%, 65%);
+    font-size: 1.2em;
+    line-height: 1.5em
+}
+.letra-naranja{
+    color: hsl(26, 100%, 55%);
+    font-weight: bold;
+    font-size: 1.5em;
+}
+.letra-titulo{
+    font-weight: bold;
+    font-size: 3.5em;
+}
+.contenedor-precio{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    flex-wrap: wrap;
+    width: 35%;
+    margin: 5px;
+}
+.letra-nuevo-precio{
+    font-size: 2em;
+    font-weight: 600;   
+}
+.letra-descuento{
+    color: hsl(26, 100%, 55%);
+    background:  hsl(25, 100%, 94%);
+    font-weight: 800;
+    padding: 3px 5px;
+    border-radius: 5px;
+    margin: auto 10px;
+}
+.letra-antiguo-precio{
+    color:  hsl(219, 9%, 65%);
+    text-decoration: line-through;
+    font-weight: 400;
+    margin-top: 5px;
+}
+.contenedor-cant-boton{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: 35px;
+    height: 60px;
+}
+.contenedor-numero-producto{
+    background: hsl(223, 64%, 98%);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 20px;
+    width: 27%;
+    height: 100%;
+}
+.contenedor-numero-producto img:hover{
+    opacity: .6;
+}
+.cantidad{
+    font-weight: 800;
+}
+.boton-add{
+    color: hsl(25, 100%, 94%);
+    font-size: 1em;
+    font-weight: 600;
+    background: hsl(26, 100%, 55%);
+    border-radius: 10px;
+    box-shadow: 3px 3px 60px 0px hsl(25, 100%, 85%);
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    height: 100%;
+    width: 62%;
+}
+.boton-add img{
+    filter: brightness(100);
+}
+.boton-add:hover{
+    background: hsl(26, 100%, 65%);   
+}
+.imagen-user{
+    width: 50px;
+}
+.imagen-user:hover{
+    border-radius: 50%;
+    border: 3px solid hsl(26, 100%, 55%);
+}
+.imagen-cart:hover{
+    filter: brightness(10%);
+}
+.section01{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 40%;
+}
+.section01 figure{
+    width: 100%;
+    margin: 0px auto;
+}
+.imagen-principal img{
+    object-fit: contain;
+    border-radius: 15px;
+    width: 100%;
+}
+.contenedor-barra-img{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: 20px;
+    width: 100%;
+}
+.contenedor-barra-img img{
+    border-radius: 15px;
+    width: 21%;
+}
+.contenedor-barra-img img:hover{
+    opacity: 0.4;
+    border: 3px solid hsl(26, 91%, 50%);   
+}
+.section02{
+    width: 45%;
+    align-self: center;
+}
