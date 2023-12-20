@@ -53,7 +53,7 @@ header nav ul a{
     margin: 50px 0;
     padding: var(--padding);
 }
-.conteiner-main-section-info{
+.container-main-section-info{
     width: 56%;
     display: flex;
     flex-direction: column;
@@ -67,7 +67,7 @@ header nav ul a{
 .paragraph-letter{
     opacity: 96%;
 }
-.conteiner-inputs{
+.container-inputs{
     width: 90%;
     display: flex;
     justify-content: space-between;
@@ -99,10 +99,10 @@ header nav ul a{
     width: 100%;
     object-fit: contain;
 }
-.conteiner-figure{
+.container-figure{
     width: 100%;
 }
-.conteiner-figure img{
+.container-figure img{
     width: 100%;
     object-fit: contain;
 }
@@ -113,13 +113,13 @@ header nav ul a{
     padding: var(--padding);
     padding-bottom: 80px;
 }
-.conteiner-secondary-section-info{
+.container-secondary-section-info{
     width: 70%;
     display: flex;
     flex-direction: column;
     gap: 35px;
 }
-.conteiner-plan{
+.container-plan{
     width: 85%;
     display: flex;
     flex-direction: column;
@@ -218,7 +218,7 @@ header nav ul a{
     filter: contrast(100);
     opacity: 80%;
 }
-.conteiner-footer-info{
+.container-footer-info{
     width: 85%;
     display: flex;
     justify-content: space-between;
@@ -228,19 +228,19 @@ header nav ul a{
     display: flex;
     gap: 10px;
 }
-.conteiner-footer-info ul{
+.container-footer-info ul{
     opacity: 80%;
     list-style: none;   
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
-.conteiner-footer-info a{
+.container-footer-info a{
     color: var(--light-grayish-blue);
     text-decoration: none;
 }
-.conteiner-footer-info li:hover,
-.conteiner-footer-info a:hover{
+.container-footer-info li:hover,
+.container-footer-info a:hover{
     color: var(--desaturated-blue);
     filter: brightness(150%);
     cursor: pointer;
@@ -264,7 +264,7 @@ header nav ul a{
         flex-direction: column-reverse;
         padding: 0 var(--padding-mobile);
     }
-    .conteiner-main-section-info{
+    .container-main-section-info{
         width: 100%;
         gap: 25px;
     }
@@ -279,7 +279,7 @@ header nav ul a{
     .main-section .paragraph-letter{
         text-align: center;
     }
-    .conteiner-inputs{
+    .container-inputs{
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -288,6 +288,9 @@ header nav ul a{
     .input-enter-email, .button-started{
         width: 100%;
     }
+    .section-figure img{
+        content: url(/fylo-landing-page-with-two-column-layout-master/images/bg-curve-mobile.svg);
+    }
     .secondary-section{
         flex-direction: column-reverse;
         padding: var(--padding-mobile);
@@ -295,13 +298,13 @@ header nav ul a{
     .secondary-section .title{
         font-size: 1rem;
     }
-    .conteiner-secondary-section-info{
+    .container-secondary-section-info{
         width: 100%;
     }
-    .conteiner-plan{
+    .container-plan{
         width: 100%;
     }
-    .conteiner-plan p{
+    .container-plan p{
         opacity: 80%;
     }
     .link-how-works{
@@ -348,7 +351,7 @@ header nav ul a{
    .footer{
     padding: 60px var(--padding-mobile);
    }
-   .conteiner-footer-info{
+   .container-footer-info{
     flex-direction: column;
     gap: 50px;
    }
