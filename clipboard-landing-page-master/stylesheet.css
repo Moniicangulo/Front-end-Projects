@@ -167,11 +167,10 @@ section {
 
 .footer {
   background-color: #f4f5f6;
-  height: 150px;
+  padding: 50px 150px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0px 150px;
 }
 .footer figure {
   width: 50px;
@@ -207,7 +206,73 @@ section {
   width: 100%;
 }
 
-.attribution {
-  margin-top: -120px;
-  height: 15px;
+@media (max-width: 376px) {
+  body {
+    font-size: 16px;
+  }
+  header {
+    background-image: url(images/bg-header-mobile.png);
+  }
+  .container-text {
+    width: 85%;
+  }
+  .container-text h1 {
+    font-size: 32px;
+  }
+  .container-text h2 {
+    font-size: 28px;
+  }
+  .container-text p {
+    line-height: 1.5;
+  }
+  .container-buttons {
+    flex-direction: column;
+  }
+  .container-information {
+    flex-direction: column;
+    gap: 50px;
+  }
+  .container-information figure {
+    margin-left: 0px;
+    width: 85%;
+    align-self: center;
+  }
+  .container-information .container-text {
+    text-align: center;
+    width: 85%;
+  }
+  .container-information .information {
+    gap: 50px;
+  }
+  .devices {
+    width: 85%;
+  }
+  .container-characteristics {
+    gap: 60px;
+  }
+  .container-characteristics .characteristics {
+    flex-direction: column;
+  }
+  .container-characteristics .characteristics .container-text {
+    width: 85%;
+  }
+  .container-logos {
+    flex-direction: column;
+    gap: 50px;
+  }
+  .footer {
+    flex-direction: column;
+    padding: 50px 0px;
+    gap: 50px;
+  }
+  .footer div:first-of-type {
+    margin-left: 0px;
+  }
+  .footer a {
+    margin: auto;
+    width: auto;
+  }
+  .footer :nth-child(3) {
+    gap: 40px;
+  }
 }/*# sourceMappingURL=stylesheet.css.map */
