@@ -1,0 +1,213 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,400;0,600;1,400;1,600&family=Gabarito:wght@400;600;800&family=Inter:wght@200;400;500;700&family=Kumbh+Sans:wght@400;700&family=Onest:wght@100;200;400;600;800&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400;1,600;1,700&family=Poppins:ital,wght@0,400;0,600;0,700;1,700&family=Quicksand:wght@300;500;700&family=Raleway:ital,wght@0,400;0,700;1,400;1,700&family=Red+Hat+Display:ital,wght@0,500;0,700;0,900;1,500;1,700;1,900&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  margin: 0px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 120px;
+  font-size: 18px;
+  font-family: "Bai Jamjuree", sans-serif;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(images/bg-header-desktop.png);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+header figure {
+  width: 80px;
+  -o-object-fit: fill;
+     object-fit: fill;
+  margin-top: 100px;
+}
+header figure img {
+  width: 100%;
+}
+
+.container-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 40px;
+}
+
+.button-ios {
+  color: #FFFFFF;
+  background-color: hsl(171, 66%, 44%);
+  width: 180px;
+  height: 45px;
+  box-shadow: 0px 8px 4px #e6faf7;
+  border: none;
+  border-bottom: 3px solid #1d907f;
+  border-radius: 30px;
+}
+
+.button-mac {
+  color: #FFFFFF;
+  background-color: hsl(233, 100%, 69%);
+  width: 180px;
+  height: 45px;
+  box-shadow: 0px 8px 4px white;
+  border: none;
+  border-bottom: 3px solid #2e46ff;
+  border-radius: 30px;
+}
+
+.container-text {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+  align-self: center;
+  color: hsl(210, 10%, 33%);
+}
+.container-text h1 {
+  font-size: 39px;
+  font-weight: 600;
+}
+.container-text p {
+  color: hsl(201, 11%, 66%);
+  line-height: 2;
+}
+
+.main-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+}
+
+.container-information {
+  display: flex;
+  gap: 100px;
+}
+.container-information figure {
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin-left: -50px;
+}
+.container-information figure img {
+  width: 100%;
+}
+.container-information .information {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.container-information .container-text {
+  width: 55%;
+  text-align: start;
+}
+
+.devices {
+  -o-object-fit: contain;
+     object-fit: contain;
+  align-self: center;
+  margin-top: 80px;
+}
+.devices img {
+  width: 100%;
+}
+
+.container-characteristics {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.container-characteristics .characteristics {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.container-characteristics .characteristics .container-text {
+  width: 25%;
+}
+.container-characteristics figure {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 50px;
+  height: 50px;
+  align-self: center;
+  margin-bottom: 15px;
+}
+.container-characteristics figure img {
+  width: 100%;
+}
+
+.container-logos {
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.container-logos figure {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.container-logos figure img {
+  width: 100%;
+}
+
+.footer {
+  background-color: #f4f5f6;
+  height: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 150px;
+}
+.footer figure {
+  width: 50px;
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+.footer figure img {
+  width: 100%;
+}
+.footer div:first-of-type {
+  width: 45%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-left: -200px;
+}
+.footer a {
+  width: 140px;
+  text-decoration: none;
+  color: hsl(210, 10%, 33%);
+}
+.footer :nth-child(3) {
+  display: flex;
+  gap: 20px;
+}
+.footer :nth-child(3) figure {
+  height: 30px;
+  width: 30px;
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+.footer :nth-child(3) figure img {
+  width: 100%;
+}
+
+.attribution {
+  margin-top: -120px;
+  height: 15px;
+}/*# sourceMappingURL=stylesheet.css.map */

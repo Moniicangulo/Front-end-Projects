@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,400;0,600;1,400;1,600&family=Gabarito:wght@400;600;800&family=Inter:wght@200;400;500;700&family=Kumbh+Sans:wght@400;700&family=Onest:wght@100;200;400;600;800&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400;1,600;1,700&family=Poppins:ital,wght@0,400;0,600;0,700;1,700&family=Quicksand:wght@300;500;700&family=Raleway:ital,wght@0,400;0,700;1,400;1,700&family=Red+Hat+Display:ital,wght@0,500;0,700;0,900;1,500;1,700;1,900&display=swap');
+$font-size: 18px;
+$font-title: 39px;
+$strong-cyan: hsl(171, 66%, 44%);
+$light-blue: hsl(233, 100%, 69%);
+$dark-grayish-blue: hsl(210, 10%, 33%);
+$grayish-blue: hsl(201, 11%, 66%);
+$white: #FFFFFF;
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    margin: 0px auto;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 120px;
+
+    font: {
+        size: $font-size;
+        family: 'Bai Jamjuree', sans-serif;
+    };
+}
+@mixin logo($width){
+    width: $width;
+    object-fit:fill;
+
+    img {
+        width: 100%;
+    }
+}
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+
+    background: {
+        image: url(images/bg-header-desktop.png);
+        repeat: no-repeat;
+        size: 100% auto;
+    };
+
+    figure {
+      @include logo(80px);
+      margin-top: 100px;
+    }
+}
+
+@mixin buttons($color) {
+    color: $white;
+    background-color: $color;
+    width: 180px;
+    height: 45px;
+    box-shadow: 0px 8px 4px lighten($color, 50%);
+
+    border: none {
+        bottom: 3px solid darken($color, 10%);
+        radius: 30px;
+    };
+}
+
+.container-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+.button-ios {
+    @include buttons($strong-cyan)
+}
+
+.button-mac {
+    @include buttons($light-blue)
+}
+
+.container-text {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    align-self: center;
+    color: $dark-grayish-blue;
+
+    h1 {
+        font: {
+            size: $font-title;
+            weight: 600;
+        };
+    }
+
+    p {
+        color: $grayish-blue;
+        line-height: 2;
+    }
+}
+.main-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+}
+section{
+    display: flex;
+    flex-direction: column;
+}
+.container-information{
+    display: flex;
+    gap: 100px;
+
+    figure{
+        object-fit: contain;
+        margin-left: -50px;
+
+        img{
+            width: 100%;
+        }
+    }
+
+    .information{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .container-text{
+        width: 55%;
+        text-align: start;
+    }
+}
+.devices{
+    object-fit: contain;
+    align-self: center;
+    margin-top: 80px;
+
+    img{
+        width: 100%;
+    }
+}
+
+.container-characteristics{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    .characteristics{
+        display: flex;
+        justify-content: center ;
+        gap: 10px;
+
+        .container-text{
+            width: 25%;
+        }
+    }
+
+    figure{
+        object-fit: cover;
+        width: 50px;
+        height: 50px;
+        align-self: center;
+        margin-bottom: 15px;
+
+        img{
+            width: 100%;
+        }
+    }
+}
+
+.container-logos{
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    
+    figure{
+        object-fit: contain;
+        width: fit-content;
+
+        img{
+            width: 100%;
+        }
+    }
+}
+.footer{
+    background-color: lighten($grayish-blue, 30%);
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 150px;
+
+    figure{
+        @include logo(50px)
+    }
+
+    div:first-of-type{
+        width: 45%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        margin-left: -200px;
+    }
+    a{
+        width: 140px;
+        text-decoration: none;
+        color: $dark-grayish-blue;
+    }
+    :nth-child(3){
+        display: flex;
+        gap: 20px;
+        figure{
+            height: 30px;
+            @include logo(30px)
+        }
+        
+    }
+}
+.attribution{
+    margin-top: -120px;
+    height: 15px;
+}
