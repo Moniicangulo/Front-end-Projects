@@ -54,10 +54,10 @@ header {
     }
 }
 
-@mixin buttons($color) {
+@mixin buttons($color, $width) {
     color: $white;
     background-color: $color;
-    width: 180px;
+    width: $width;
     height: 45px;
     box-shadow: 0px 8px 4px lighten($color, 50%);
 
@@ -65,6 +65,10 @@ header {
         bottom: 3px solid darken($color, 10%);
         radius: 30px;
     };
+    &:hover{
+        cursor: pointer;
+        opacity: 80%;
+    }
 }
 
 .container-buttons {
@@ -76,11 +80,11 @@ header {
 }
 
 .button-ios {
-    @include buttons($strong-cyan)
+    @include buttons($strong-cyan, 180px)
 }
 
 .button-mac {
-    @include buttons($light-blue)
+    @include buttons($light-blue, 180px)
 }
 
 .container-text {
@@ -212,6 +216,11 @@ section{
         width: 140px;
         text-decoration: none;
         color: $dark-grayish-blue;
+
+        &:hover{
+            color: $strong-cyan;
+            filter: brightness(110%);
+        }
     }
     :nth-child(3){
         display: flex;
@@ -242,8 +251,11 @@ section{
             line-height: 1.5;
         }
     }
-    @mixin buttons{
-        width: 85%;
+    .button-ios{
+        @include buttons($strong-cyan, 85%)
+    }
+    .button-mac{
+        @include buttons($light-blue, 85%)
     }
     .container-buttons{
         flex-direction: column;

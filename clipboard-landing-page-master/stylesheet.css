@@ -51,6 +51,10 @@ header figure img {
   border-bottom: 3px solid #1d907f;
   border-radius: 30px;
 }
+.button-ios:hover {
+  cursor: pointer;
+  opacity: 80%;
+}
 
 .button-mac {
   color: #FFFFFF;
@@ -61,6 +65,10 @@ header figure img {
   border: none;
   border-bottom: 3px solid #2e46ff;
   border-radius: 30px;
+}
+.button-mac:hover {
+  cursor: pointer;
+  opacity: 80%;
 }
 
 .container-text {
@@ -192,6 +200,10 @@ section {
   text-decoration: none;
   color: hsl(210, 10%, 33%);
 }
+.footer a:hover {
+  color: hsl(171, 66%, 44%);
+  filter: brightness(110%);
+}
 .footer :nth-child(3) {
   display: flex;
   gap: 20px;
@@ -224,6 +236,34 @@ section {
   }
   .container-text p {
     line-height: 1.5;
+  }
+  .button-ios {
+    color: #FFFFFF;
+    background-color: hsl(171, 66%, 44%);
+    width: 85%;
+    height: 45px;
+    box-shadow: 0px 8px 4px #e6faf7;
+    border: none;
+    border-bottom: 3px solid #1d907f;
+    border-radius: 30px;
+  }
+  .button-ios:hover {
+    cursor: pointer;
+    opacity: 80%;
+  }
+  .button-mac {
+    color: #FFFFFF;
+    background-color: hsl(233, 100%, 69%);
+    width: 85%;
+    height: 45px;
+    box-shadow: 0px 8px 4px white;
+    border: none;
+    border-bottom: 3px solid #2e46ff;
+    border-radius: 30px;
+  }
+  .button-mac:hover {
+    cursor: pointer;
+    opacity: 80%;
   }
   .container-buttons {
     flex-direction: column;
