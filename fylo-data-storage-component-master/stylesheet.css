@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,400;0,600;1,400;1,600&family=Raleway:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(images/bg-desktop.png);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: 100% 50%;
+  background-color: hsl(229, 57%, 11%);
+  font-size: 14px;
+  font-family: "Raleway", sans-serif;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  gap: 25px;
+}
+
+.card-logo {
+  background-color: hsl(228, 56%, 26%);
+  border-radius: 10px;
+  border-top-right-radius: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 35px;
+  padding-right: 110px;
+}
+.card-logo .logo {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 130px;
+}
+.card-logo .logo img {
+  width: 100%;
+}
+.card-logo div {
+  display: flex;
+  gap: 15px;
+}
+.card-logo div figure {
+  -o-object-fit: contain;
+     object-fit: contain;
+  background-color: hsl(229, 57%, 11%);
+  width: 45px;
+  height: 45px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-logo div figure img {
+  width: 50%;
+}
+
+.card-data-storage {
+  width: 500px;
+  background-color: hsl(228, 56%, 26%);
+  border-radius: 10px;
+  color: hsl(243, 100%, 93%);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 35px;
+}
+.card-data-storage p {
+  font-weight: 400;
+  opacity: 90%;
+}
+.card-data-storage p span {
+  font-weight: 700;
+}
+
+.container-gb {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 700;
+  opacity: 90%;
+}
+
+.container-gb-left {
+  width: 170px;
+  position: relative;
+  top: -60px;
+  right: 0px;
+  background-color: white;
+  border-radius: 10px;
+  border-bottom-right-radius: 0px;
+  color: hsl(229, 7%, 55%);
+  font-weight: 700;
+  padding: 12px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+.container-gb-left :first-child {
+  color: hsl(229, 57%, 11%);
+  font-size: 2.5em;
+}
+
+.triangule-gb-left {
+  position: absolute;
+  width: 15px;
+  height: 25px;
+  bottom: -25px;
+  right: 0px;
+}
+
+.bar-blue {
+  position: relative;
+  width: 100%;
+  height: 20px;
+  background-color: #162150;
+  border-radius: 15px;
+  padding: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.bar-orange {
+  position: relative;
+  width: 80%;
+  height: 90%;
+  background: linear-gradient(90deg, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+  border-radius: 15px;
+  padding: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.circle-white {
+  width: 9px;
+  height: 9px;
+  background-color: hsl(243, 100%, 93%);
+  border-radius: 50%;
+}
+
+@media (max-width: 376px) {
+  body {
+    background-image: url(images/bg-mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+  }
+  section {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+  .card-logo,
+  .card-data-storage {
+    width: 85%;
+  }
+  .card-data-storage {
+    font-size: 0.95em;
+    text-align: center;
+  }
+  .bar-orange {
+    width: 100%;
+  }
+  .container-gb-left {
+    position: absolute;
+    width: 55%;
+    top: 50px;
+    right: 65px;
+    border-bottom-right-radius: 10px;
+  }
+  .triangule-gb-left {
+    display: none;
+  }
+}/*# sourceMappingURL=stylesheet.css.map */
