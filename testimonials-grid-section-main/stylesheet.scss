@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,400;0,600;1,400;1,600&display=swap');
+$moderate-violet: hsl(263, 55%, 52%);
+$very-dark-grayish-blue: hsl(217, 19%, 35%);
+$very-dark-blackish-blue: hsl(219, 29%, 14%);
+$white: hsl(0, 0%, 100%);
+
+$light-gray: hsl(0, 0%, 81%);
+$light-grayish-blue: hsl(210, 46%, 95%);
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: lighten($very-dark-grayish-blue, 50%);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font: {
+        size: 13px;
+        family: 'Barlow Semi Condensed', sans-serif;
+    };
+}
+@mixin user($color-letter){
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+    color: $color-letter;
+
+    figure{
+        object-fit: contain;
+        width: 30px;
+        img{
+            width: 100%;
+            border: 1px opacity($color: $color-letter);
+            border-radius: 50%;
+        }
+    }
+    div{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+
+        :nth-child(1){
+            font-weight: 600;
+        }
+        :nth-child(2){
+            opacity: 50%;
+        }
+    }
+
+}
+@mixin card($color, $color-letter){
+    background-color: $color;
+    border-radius: 10px;
+    color: $color-letter;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    overflow: hidden;
+    padding: 25px{ left: 30px};
+    p{
+        opacity: 70%;
+        line-height: 1.5;
+        font-weight: 400;
+    }
+    .container-user{
+        @include user($color-letter);
+    }
+}
+section{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(auto, 280px);
+    gap: 20px;
+    margin: 3% 10%;
+
+    .card-testimonial:first-of-type{
+        @include card($moderate-violet, $light-grayish-blue);
+        grid-column: 1/3;
+        grid-row: 1;
+    }
+    .card-testimonial:nth-of-type(2){
+        @include card($very-dark-grayish-blue, $light-gray);
+        grid-column: 3;
+        grid-row: 1;
+    }
+    .card-testimonial:nth-of-type(3){
+        @include card($white, $very-dark-blackish-blue);
+        grid-column: 1;
+        grid-row: 2;
+    }
+    .card-testimonial:nth-of-type(4){
+        @include card($very-dark-blackish-blue, $light-gray);
+        grid-column: 2/4;
+        grid-row: 2;
+    }
+    .card-testimonial:last-of-type{
+        @include card($white, $very-dark-blackish-blue);
+        grid-column: 4;
+        grid-row: 1/3;
+    }
+}
+
+@media  (max-width: 770px) {
+    body{
+        height: auto;
+    }
+    section{
+        display: flex;
+        flex-direction: column;
+        margin: {
+            top: 50px;
+            bottom: 50px;
+        };
+    }
+}
+@media (max-width: 1025px){
+    section{
+        margin: {
+            left: 5%;
+            right: 5%;
+        };
+    }
+}
+
+
